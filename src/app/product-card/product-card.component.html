@@ -1,0 +1,12 @@
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" [src]="product.imageUrl" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{product.title}}</h5>
+    <p class="card-text">{{product.price | currency}}</p>
+  </div>
+  <div class="card-footer">
+      <a href="#" 
+        *ngIf="showActions"
+        class="btn btn-primary btn-block">Add to cart</a>
+  </div>
+</div>

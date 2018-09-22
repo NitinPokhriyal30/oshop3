@@ -1,0 +1,25 @@
+<p>
+  <a class="btn btn-primary" routerLink="new">New Product</a>
+</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Price</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let prouduct of productList">
+      <td>{{prouduct.title}}</td>
+      <td>{{prouduct.price}}</td>
+      <td>
+        <a class="btn"  (click)="onEdit(prouduct)">
+          <i class="fa fa-pencil-square-o"></i>
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
